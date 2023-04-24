@@ -1,13 +1,16 @@
-*{
+* {
     color: red;
 }
-p{
+
+p {
     font-size: 30px;
     color: orange;
 }
-.class-selector{
+
+.class-selector {
     color: brown;
 }
-#id-selector{
-    color: green;
+
+#id-selector {
+  color: green;  
 }
