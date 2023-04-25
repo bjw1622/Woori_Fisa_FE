@@ -8,23 +8,25 @@
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card:nth-child(1) {
-    /* display: none; */
+  /* display: none; */
 }
 
 .card:nth-child(2) {
-    /* visibility: hidden; */
+  /* visibility: hidden; */
 }
 
-.card:nth-last-child(1) {/* 마지막 요소부터 선택 */
-    /* display: none; */
+.card:nth-last-child(1) {
+  /* 마지막 요소부터 선택 */
+  /* display: none; */
 }
 
-.card:nth-child(even) {/* 홀수 odd */
-    display: none;
+.card:nth-child(even) {
+  /* 홀수 odd */
+  /* display: none; */
 }
 
 .container {

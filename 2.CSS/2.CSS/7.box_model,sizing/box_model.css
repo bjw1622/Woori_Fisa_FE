@@ -1,1 +1,20 @@
 /* 직접 같이 타이핑하여 학습 */
+
+/* 
+content box : content내용 기준으로 박스 사이즈 
+boreder box : border까지 기준으로 박스 사이즈
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 500px;
+  background-color: skyblue;
+  font-size: 50px;
+  padding: 20px;
+  border: 5px dashed beige;
+  margin: 30px;
+  background-color: green;
+}
