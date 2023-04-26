@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .container {
+        /* flexbox layout */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+      }
+    </style>
     <script>
-        window.location.href = 'https://flexboxfroggy.com/#ko';
+      //   window.location.href = "https://flexboxfroggy.com/#ko";
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <p>개구리가 알려주는 Flexbox layout</p>
-</body>
-
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
 </html>
