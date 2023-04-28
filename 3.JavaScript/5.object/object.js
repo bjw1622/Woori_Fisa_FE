@@ -16,13 +16,31 @@
  * * 일급 객체란? : https://hanamon.kr/javascript-%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98%EC%99%80-%EC%BD%9C%EB%B0%B1-%EC%9D%BC%EA%B8%89%EA%B0%9D%EC%B2%B4%EB%9E%80/#:~:text=%ED%95%A8%EC%88%98%EA%B0%80%20%EC%9D%BC%EA%B8%89%20%EA%B0%9D%EC%B2%B4%EB%9D%BC%EB%8A%94,%EC%97%90%EC%84%9C%20%EB%B0%98%ED%99%98%EB%90%A0%20%EC%88%98%EB%8F%84%20%EC%9E%88%EB%8B%A4.
  */
 
-// 객체 리터럴 방식을 활용한 객체 생성
+// 객체 리터럴 방식({})을 활용한 객체 생성
+const dog = { // key: value형식으로 작성
+    age: 2, 
+    name:'toto'
+}; 
 
+const dog2 = {
+    age: 2,
+    name: 'toto',
+    walk: function walk() {
+        console.log('강아지가 걷는다');
+    }
+}
+
+// console.log(dog === dog2);
+console.log(dog2.walk());
 
 // 프로퍼티 조회(접근)
-
+console.log(dog.age);
 
 // 프로퍼티 동적 추가, (존재하지 않는 프로퍼티에 값을 할당하면 추가됨.)
+dog.color = 'brown';
 
-
+console.log(dog);
 // 프로퍼티 삭제(delete 연산자, 잘 사용하지 않음, 왜?)
+
+delete dog.age;
+console.log(dog);
