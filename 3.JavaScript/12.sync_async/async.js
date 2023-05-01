@@ -11,3 +11,8 @@ function firstWork() {
 function secondWork() {
     console.log('두 번째 작업 진행 중');
 }
+
+// setTimeout(callback, 지연시킬 시간(ms)); // 지정한 시간 이후에 코드를 수행하도록 동작하는 함수
+
+setTimeout(firstWork, 3 * 1000); // 3초 후 firstWork 호출
+secondWork();

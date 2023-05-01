@@ -13,3 +13,14 @@ const secondFunc = () => {
     console.log('두 번째 함수 호출됨.');
 };
 
+firstFunc();
+someLongWork();
+secondFunc();
+
+/**
+ * 동기 방식
+ * 한 번에 하나의 작업만 처리하기 때문에 특정 작업 (someLongWork())이 길어질 경우,
+ * 그 뒤의 작업(secondFun())은 blocking됨(작업 수행 불가)
+ * 
+   장점: 코드를 읽기가 쉽다.
+ */

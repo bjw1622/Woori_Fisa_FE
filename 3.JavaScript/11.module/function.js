@@ -10,25 +10,25 @@
  * 
  */
 
-function sum(x, y) {
+export function sum(x, y) {
   return x + y;
 }
 
-function sub(x, y) {
+export function sub(x, y) {
   return x - y;
 }
 
-function mul(x, y) {
+export function mul(x, y) {
   return x * y;
 }
 
-function division(x, y) {
+export function division(x, y) {
   return x / y;
 }
 
 // Primitive values
 // Primitive values
-const number = 100
+export const number = 100
 const string = 'string'
 const undef = undefined
 const empty = null
