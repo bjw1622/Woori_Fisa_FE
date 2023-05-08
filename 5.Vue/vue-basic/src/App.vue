@@ -44,7 +44,7 @@ import Basic4UsingWatchEffect from "./10.watchers/Basic4UsingWatchEffect.vue";
 
 <template>
   <!-- 1. Template Syntax -->
-  <Basic1TextInterpolation />
+  <!-- <Basic1TextInterpolation /> -->
   <!-- <Basic2RawHTML /> -->
   <!-- <Basic3AttributeBinding /> -->
   <!-- <Basic4Directives /> -->
@@ -55,7 +55,7 @@ import Basic4UsingWatchEffect from "./10.watchers/Basic4UsingWatchEffect.vue";
 
   <!-- 3. computed properties -->
   <!-- <Basic1ComputedProperties /> -->
-  <!-- <Basic2ComputedPractice /> -->
+  <Basic2ComputedPractice />
 
   <!-- 4. class style bindings -->
   <!-- <Basic1BindingHTML /> -->
