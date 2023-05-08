@@ -7,5 +7,19 @@
     <title>Document</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div id="app">{{message}}</div>
+    <script>
+      const { createApp } = Vue;
+      const myFirstVueApp = createApp({
+        data() {
+          return {
+            message: "Hello Vue",
+          };
+        },
+      });
+      //   console.log(myFirstVueApp);
+      myFirstVueApp.mount("#app");
+    </script>
+  </body>
 </html>
