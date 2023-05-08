@@ -1,6 +1,6 @@
 <template>
     <div>
-        About page
+
     </div>
 </template>
 
@@ -8,6 +8,6 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
