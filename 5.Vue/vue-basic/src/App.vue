@@ -55,7 +55,7 @@ import Basic4UsingWatchEffect from "./10.watchers/Basic4UsingWatchEffect.vue";
 
   <!-- 3. computed properties -->
   <!-- <Basic1ComputedProperties /> -->
-  <Basic2ComputedPractice />
+  <!-- <Basic2ComputedPractice /> -->
 
   <!-- 4. class style bindings -->
   <!-- <Basic1BindingHTML /> -->
@@ -93,7 +93,7 @@ import Basic4UsingWatchEffect from "./10.watchers/Basic4UsingWatchEffect.vue";
   <!-- <Basic1Watch /> -->
   <!-- <Basic2WatchPractice /> -->
   <!-- <Basic3WatchNWatchEffect /> -->
-  <!-- <Basic4UsingWatchEffect /> -->
+  <Basic4UsingWatchEffect />
 </template>
 
 <style scoped>
