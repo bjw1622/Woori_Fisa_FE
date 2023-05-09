@@ -78,7 +78,7 @@ import Basic4UsingWatchEffect from "./10.watchers/Basic4UsingWatchEffect.vue";
   <!-- 9. lifecycle hooks -->
   <!-- Lifecycle은 HomeView에서 진행 -->
 
-  <!-- <nav>
+  <nav>
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/about">About</RouterLink>
   </nav>
@@ -87,13 +87,13 @@ import Basic4UsingWatchEffect from "./10.watchers/Basic4UsingWatchEffect.vue";
     <KeepAlive>
       <component :is="Component" />
     </KeepAlive>
-  </RouterView> -->
+  </RouterView>
 
   <!-- 10. watchers -->
   <!-- <Basic1Watch /> -->
   <!-- <Basic2WatchPractice /> -->
   <!-- <Basic3WatchNWatchEffect /> -->
-  <Basic4UsingWatchEffect />
+  <!-- <Basic4UsingWatchEffect /> -->
 </template>
 
 <style scoped>
