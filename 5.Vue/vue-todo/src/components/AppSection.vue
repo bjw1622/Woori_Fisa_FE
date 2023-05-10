@@ -1,8 +1,10 @@
+<script setup>
+import TodoList from "./todos/TodoList.vue";
+</script>
+
 <template>
   <div>
     {{ `TodoHeader 부분` }}<br />
-    {{ `TodoBody부분` }}
+    <TodoList></TodoList>
   </div>
 </template>
-
-<script setup></script>
