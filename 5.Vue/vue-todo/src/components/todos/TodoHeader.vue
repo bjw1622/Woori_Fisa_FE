@@ -6,13 +6,22 @@
     >
       Add Todo
     </button>
-
+    <Teleport to="body">
+      <DefaultModal>
+        <template #header>
+          <h3>New Code</h3>
+        </template>
+        <template #body><NewTodo></NewTodo> </template>
+      </DefaultModal>
+    </Teleport>
     <TodoFilter />
   </div>
 </template>
 
 <script setup>
+import DefaultModal from "../DefaultModal.vue";
 import TodoFilter from "./TodoFilter.vue";
+import NewTodo from "./NewTodo..vue";
 </script>
 
 <style lang="scss" scoped></style>
