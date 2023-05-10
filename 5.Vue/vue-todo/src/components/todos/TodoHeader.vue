@@ -1,17 +1,20 @@
 <template>
   <div class="flex items-center justify-between mb-2" id="task-control">
     <button
+      @click="openModal"
       class="px-6 py-2 font-semibold text-gray-100 bg-gray-800 border-none rounded cursor-pointer"
       data-cy="add-todo-button"
     >
       Add Todo
     </button>
     <Teleport to="body">
-      <DefaultModal>
+      <DefaultModal :isModalOpen="isModalOpen" @click="closeModal">
         <template #header>
           <h3>New Code</h3>
         </template>
-        <template #body><NewTodo></NewTodo> </template>
+        <template #body
+          ><NewTodo @close-modal="closeModal"></NewTodo>
+        </template>
       </DefaultModal>
     </Teleport>
     <TodoFilter />
@@ -22,6 +25,9 @@
 import DefaultModal from "../DefaultModal.vue";
 import TodoFilter from "./TodoFilter.vue";
 import NewTodo from "./NewTodo..vue";
-</script>
+import { ref } from "vue";
 
-<style lang="scss" scoped></style>
+const isModalOpen = ref(false);
+const openModal = () => (isModalOpen.value = true);
+const closeModal = () => (isModalOpen.value = false);
+</script>
