@@ -18,7 +18,6 @@
         </template>
       </DefaultModal>
     </Teleport>
-
     <TodoFilter />
   </div>
 </template>

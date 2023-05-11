@@ -13,15 +13,13 @@
     </div>
     <div class="flex items-center gap-2">
       <button class="w-8 text-xl font-semibold cursor-pointer">✏️</button>
-      <button @click="deleteTodo()" class="w-8 text-xl font-semibold text-red-300 cursor-pointer">
-        X
-      </button>
+      <button class="w-8 text-xl font-semibold text-red-300 cursor-pointer">X</button>
     </div>
   </li>
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   todo: {
     type: Object,
     default() {
@@ -35,16 +33,10 @@ const props = defineProps({
   }
 })
 
-const todo = props.todo.id
-
 const category_icons = {
   todo: '📑',
   progress: '👀',
   done: '😀'
-}
-const emit = defineEmits(['delete-Todo'])
-const deleteTodo = (todo) => {
-  emit('delete-Todo', todo)
 }
 </script>
 
