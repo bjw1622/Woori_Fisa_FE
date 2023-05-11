@@ -35,7 +35,13 @@ export const useTodoStore = defineStore('todoStore', () => {
   // todo 수정 - editTodo
 
   // todo 삭제 - deleteTodo
-
+  const deleteTodo = (id) => {
+    todos.value.forEach((todo, index) => {
+      if (todo.id === id) {
+        todos.value.splice(index, 1)
+      }
+    })
+  }
   // todo 필터링 - filterTodo
 
   const filterTodos = (category) => {
@@ -54,6 +60,7 @@ export const useTodoStore = defineStore('todoStore', () => {
     todos,
     addTodo,
     filterTodos,
-    filteredTodoByCategory
+    filteredTodoByCategory,
+    deleteTodo
   }
 })

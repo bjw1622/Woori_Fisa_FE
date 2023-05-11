@@ -13,13 +13,20 @@
     </div>
     <div class="flex items-center gap-2">
       <button class="w-8 text-xl font-semibold cursor-pointer">✏️</button>
-      <button class="w-8 text-xl font-semibold text-red-300 cursor-pointer">X</button>
+      <button
+        @click="todoStore.deleteTodo(todoItem.todo.id)"
+        class="w-8 text-xl font-semibold text-red-300 cursor-pointer"
+      >
+        X
+      </button>
     </div>
   </li>
 </template>
 
 <script setup>
-defineProps({
+import { useTodoStore } from '../../stores/todo'
+
+const todoItem = defineProps({
   todo: {
     type: Object,
     default() {
@@ -32,12 +39,12 @@ defineProps({
     }
   }
 })
-
 const category_icons = {
   todo: '📑',
   progress: '👀',
   done: '😀'
 }
+const todoStore = useTodoStore()
 </script>
 
 <style lang="scss" scoped></style>
