@@ -66,8 +66,7 @@ const addTodo = () => {
     summmary: summary.value,
     category: category.value
   }
-
-  //   emit('add-todo', newTodo)
+  console.log(newTodo.title)
   todoStore.addTodo(newTodo)
   emit('close-modal')
 }

@@ -31,6 +31,7 @@ export const useTodoStore = defineStore('todoStore', () => {
   // todo 추가 - addTodo
   const addTodo = (newTodo) => {
     todos.value.push(newTodo)
+    console.log(newTodo)
   }
   // todo 수정 - editTodo
 
