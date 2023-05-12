@@ -1,3 +1,5 @@
+import { add } from "./src/calculator.js";
+
 const form = document.getElementById("form");
 const output = document.getElementById("result");
 
@@ -14,6 +16,7 @@ const formSubmitHandler = (event) => {
   numbers.push(secondNumber);
 
   // 덧셈 로직
+  const result = add(numbers);
 
   output.textContent = result;
 };
