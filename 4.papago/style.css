@@ -1,0 +1,84 @@
+html {
+  background-color: #e3e9ff;
+}
+#task-input {
+  width: 270px;
+  margin-left: 20px;
+  height: 22px;
+}
+#add-task {
+  background-color: #af7eea;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 70px;
+  height: 30px;
+  font-size: 15px;
+  margin-top: 13px;
+  margin-left: 7px;
+}
+/* main-table 태그 없애고 table 태그에 justify-content 적용하고 싶은데 안됨..  */
+.main-table {
+  display: flex;
+  justify-content: center;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 80px;
+}
+#box1 {
+  border: none;
+  padding-top: 15px;
+  background-color: #af7eea;
+  width: 400px;
+  height: 45px;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+#box2 {
+  border: none;
+  width: 400px;
+  height: 450px;
+  background-color: white;
+  box-shadow: 0 0 10px lightslategray;
+}
+ul {
+  padding-left: 2px;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 3px;
+  margin-right: 7px;
+}
+#del-button {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+span {
+  display: inline-block;
+  width: 285px;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#check-box {
+  margin-left: 20px;
+}
+#delete {
+  margin-right: 20px;
+}
