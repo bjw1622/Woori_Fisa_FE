@@ -16,7 +16,6 @@ Exercise:
 
 */
 
-
 /*
     1번
 
@@ -25,31 +24,30 @@ Exercise:
 */
 
 export type User = {
-    name: String,
-    age: Number,
-    occupation: String,
+  name: String;
+  age: Number;
+  occupation: String;
 };
 
 export const users: User[] = [
-    {
-        name: 'Max Mustermann',
-        age: 25,
-        occupation: 'Chimney sweep'
-    },
-    {
-        name: 'Kate Müller',
-        age: 23,
-        occupation: 'Astronaut'
-    }
+  {
+    name: "Max Mustermann",
+    age: 25,
+    occupation: "Chimney sweep",
+  },
+  {
+    name: "Kate Müller",
+    age: 23,
+    occupation: "Astronaut",
+  },
 ];
 
 export function logPerson(user: User) {
-    console.log(` - ${user.name}, ${user.age}`);
+  console.log(` - ${user.name}, ${user.age}`);
 }
 
-console.log('Users:');
+console.log("Users:");
 users.forEach(logPerson);
-
 
 /* In case if you are stuck:
 

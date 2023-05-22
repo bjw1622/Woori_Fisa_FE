@@ -16,7 +16,6 @@ Exercise:
 
 */
 
-
 /*
     1번
 
@@ -24,28 +23,30 @@ Exercise:
     작성한 인터페이스를 코드 내에서 적절하게 사용하기
 */
 
-export type User = unknown;
+export type User = {
+  name: string;
+  age: number;
+  occupation: string;
+};
 
-export const users: unknown[] = [
-    {
-        name: 'Max Mustermann',
-        age: 25,
-        occupation: 'Chimney sweep'
-    },
-    {
-        name: 'Kate Müller',
-        age: 23,
-        occupation: 'Astronaut'
-    }
+export const users: User[] = [
+  {
+    name: "Max Mustermann",
+    age: 25,
+    occupation: "Chimney sweep",
+  },
+  {
+    name: "Kate Müller",
+    age: 23,
+    occupation: "Astronaut",
+  },
 ];
-
-export function logPerson(user: unknown) {
-    console.log(` - ${user.name}, ${user.age}`);
+export function logPerson(user: User) {
+  console.log(` - ${user.name}, ${user.age}`);
 }
 
-console.log('Users:');
+console.log("Users:");
 users.forEach(logPerson);
-
 
 /* In case if you are stuck:
 
