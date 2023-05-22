@@ -1,7 +1,8 @@
+"use strict";
 function greet(person, date) {
-    console.log("Hello ".concat(person, ", today is ").concat(date, "!"));
+  console.log(`Hello ${person}, today is ${date.toDateString}!`);
 }
-greet("Brandon", undefined); // 잘못된 인수 개수 전달 시 에러 발생
+greet("Brandon", new Date()); // 잘못된 인수 개수 전달 시 에러 발생
 // hello.ts -> hello.js로 변환 (트랜스파일, Transpile)
 // 컴파일 vs 트랜스 파일
 // tsc -version
