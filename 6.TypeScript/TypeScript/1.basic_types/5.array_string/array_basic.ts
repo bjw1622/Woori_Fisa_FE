@@ -1,0 +1,1 @@
+const elements = [true, null, undefined, 42]; // 기존 JS에서는 모든 타입의 값들을 배열의 요소로 저장 가능
