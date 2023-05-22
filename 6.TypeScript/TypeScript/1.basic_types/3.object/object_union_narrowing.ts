@@ -21,6 +21,17 @@ const firstCookie: Cookie =
 console.log(firstCookie.name);
 
 // 타입 좁히기(Narrowing)
+// firstCookie에 compay 프로퍼티가 존재할 경우, 접근 가능
 if ("company" in firstCookie) {
   firstCookie.company;
+}
+
+if ("taste" in firstCookie) {
+  firstCookie.taste;
+}
+// or
+if ("company" in firstCookie) {
+  firstCookie.company;
+} else {
+  firstCookie.taste;
 }
